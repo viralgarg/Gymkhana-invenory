@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".RegisterStudent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Enter details to register"
+            android:textSize="25sp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/text"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textSize="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text"/>
+
+        <EditText
+            android:id="@+id/rollno"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:ems="10"
+            android:hint="Roll No"
+            android:textAllCaps="true"
+            android:inputType="textPersonName"
+            android:textSize="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/name"/>
+
+        <EditText
+            android:id="@+id/phoneNo"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="#11000000"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_action_phone"
+            android:ems="10"
+            android:hint="Phone No"
+            android:layout_below="@id/rollno"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_action_lock"
+            android:ems="10"
+            android:hint="Password"
+            android:layout_marginTop="30dp"
+            android:inputType="textPassword"
+            android:layout_below="@id/phoneNo"
+            android:layout_centerHorizontal="true" />
+
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUp"
+            android:layout_below="@id/password"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:text="SignUp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#EC407A"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="320dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/logo"/>
+
+
+        <EditText
+            android:id="@+id/rollno"
+            android:textAllCaps="true"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:ems="10"
+            android:hint="Roll No"
+            android:inputType="textPersonName"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageView"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_action_lock"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_below="@id/rollno"
+            android:layout_centerHorizontal="true"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/checkbox"
+            android:layout_below="@id/password"
+            android:layout_marginTop="10dp"
+            >
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Student"
+                android:id="@+id/student"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:text="Coordinator"
+                android:textColor="#fff"
+                android:id="@+id/coordinator"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:text="GSec"
+                android:id="@+id/gsec"
+                android:textColor="#fff"
+                android:layout_marginRight="65dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            android:layout_below="@id/checkbox"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="Login"
+            android:background="@drawable/shape"
+            android:backgroundTint="#EC407A"
+            />
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#EC407A"
+            android:text="@string/sign_up" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addItem"
+    android:background="@drawable/gradient">
+
+    <EditText
+        android:id="@+id/item"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:ems="10"
+        android:hint="Item"
+        android:inputType="textPersonName"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/count"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:ems="10"
+        android:hint="Count"
+        android:inputType="textPersonName"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/item"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/add"
+        android:layout_below="@id/count"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Add Item"
+        android:background="@drawable/shape"
+        android:backgroundTint="#EC407A"
+        />
+
+
+</RelativeLayout>

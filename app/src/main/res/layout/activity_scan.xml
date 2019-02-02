@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Scan"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Inventory"
+        android:id="@+id/inventory"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="25sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:foregroundGravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/recycler_view"
+        android:layout_below="@id/inventory">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

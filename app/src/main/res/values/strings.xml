@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Gymkhana Inventory</string>
+    <string name="sign_up">sign up</string>
+
+    <array name="hostels">
+        <item>BH1</item>
+        <item>BH2</item>
+        <item>BH3</item>
+        <item>GH</item>
+    </array>
+
+    <array name="Councils">
+        <item>Sports</item>
+        <item>Cultural</item>
+        <item>Robotics</item>
+    </array>
+    <string name="title_activity_add_inventory">AddInventory</string>
+</resources>
