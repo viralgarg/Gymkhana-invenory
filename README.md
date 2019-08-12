@@ -1,4 +1,4 @@
-# Gymkhana-invenory
+# Gymkhana-inventory
 Android app for LNMIIT Gymkhana inventory
 
 
